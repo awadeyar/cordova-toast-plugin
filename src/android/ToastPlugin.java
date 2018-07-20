@@ -19,6 +19,7 @@ public class ToastPlugin extends CordovaPlugin {
             return false;
         }
 
+// Obtain the message and duration from java script options
         String message;
         String duration;
         try{
@@ -31,7 +32,7 @@ public class ToastPlugin extends CordovaPlugin {
             callbackContext.error("Error encountered: " + e.getMessage());
             return false;
         }
-
+// Show the toast 
         Toast.makeText(cordova.getActivity(),message,DURATION_LONG.equals(duration)? Toast.LENGTH_LONG:Toast.LENGTH_SHORT).show();
         PluginResult pluginResult = new PluginResult(PluginResult.Status.OK);
         callbackContext.sendPluginResult(pluginResult);
