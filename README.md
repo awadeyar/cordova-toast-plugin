@@ -1,2 +1,3 @@
 # cordova-toast-plugin
-Displays the native toast messages in Cordova projects
+Displays the native toast messages in Cordova projects.
+Updated
