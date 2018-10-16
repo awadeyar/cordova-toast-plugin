@@ -9,12 +9,12 @@
      <engines>
         <engine name="cordova" version=">=5.0.0"/>
     </engines>
-    <js-module src="www/toast-plugin.js" name="toast-Plugin">
+    <js-module src="www/toastplugin.js" name="toast-Plugin">
         <clobbers target="window.plugins.toast-Plugin" />
     </js-module>
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="ToastyPlugin">
+            <feature name="ToastPlugin">
                 <param name="android-package" value="com.amwadeyar.cordova.plugin.ToastPlugin"/>
             </feature>
         </config-file>
